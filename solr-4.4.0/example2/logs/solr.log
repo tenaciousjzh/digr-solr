@@ -1,0 +1,539 @@
+INFO  - 2013-09-13 06:31:38.040; org.apache.solr.common.cloud.SolrZkClient; makePath: /live_nodes/192.168.1.4:7574_solr
+INFO  - 2013-09-13 06:31:38.046; org.apache.solr.common.cloud.ZkStateReader$3; Updating live nodes... (2)
+INFO  - 2013-09-13 06:31:38.046; org.apache.solr.cloud.ZkController; Register replica - core:store3 address:http://192.168.1.4:7574/solr collection:store3 shard:shard2
+INFO  - 2013-09-13 06:31:38.047; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=10000&maxConnectionsPerHost=20&connTimeout=30000&socketTimeout=30000&retry=false
+INFO  - 2013-09-13 06:31:38.061; org.apache.solr.cloud.ShardLeaderElectionContext; Running the leader process for shard shard2
+INFO  - 2013-09-13 06:31:38.071; org.apache.solr.cloud.ShardLeaderElectionContext; Enough replicas found to continue.
+INFO  - 2013-09-13 06:31:38.071; org.apache.solr.cloud.ShardLeaderElectionContext; I may be the new leader - try and sync
+INFO  - 2013-09-13 06:31:38.072; org.apache.solr.cloud.SyncStrategy; Sync replicas to http://192.168.1.4:7574/solr/store3/
+INFO  - 2013-09-13 06:31:38.072; org.apache.solr.cloud.SyncStrategy; Sync Success - now sync replicas to me
+INFO  - 2013-09-13 06:31:38.072; org.apache.solr.cloud.SyncStrategy; http://192.168.1.4:7574/solr/store3/ has no replicas
+INFO  - 2013-09-13 06:31:38.072; org.apache.solr.cloud.ShardLeaderElectionContext; I am the new leader: http://192.168.1.4:7574/solr/store3/ shard2
+INFO  - 2013-09-13 06:31:38.073; org.apache.solr.common.cloud.SolrZkClient; makePath: /collections/store3/leaders/shard2
+INFO  - 2013-09-13 06:31:38.087; org.apache.solr.cloud.ZkController; We are http://192.168.1.4:7574/solr/store3/ and leader is http://192.168.1.4:7574/solr/store3/
+INFO  - 2013-09-13 06:31:38.088; org.apache.solr.cloud.ZkController; No LogReplay needed for core=store3 baseURL=http://192.168.1.4:7574/solr
+INFO  - 2013-09-13 06:31:38.088; org.apache.solr.cloud.ZkController; I am the leader, no recovery necessary
+INFO  - 2013-09-13 06:31:38.088; org.apache.solr.cloud.ZkController; publishing core=store3 state=active
+INFO  - 2013-09-13 06:31:38.088; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:31:38.093; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper... 
+INFO  - 2013-09-13 06:31:38.095; org.apache.solr.cloud.ZkController; Register replica - core:store1 address:http://192.168.1.4:7574/solr collection:store1 shard:shard2
+INFO  - 2013-09-13 06:31:38.095; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=10000&maxConnectionsPerHost=20&connTimeout=30000&socketTimeout=30000&retry=false
+INFO  - 2013-09-13 06:31:38.107; org.apache.solr.cloud.ShardLeaderElectionContext; Running the leader process for shard shard2
+INFO  - 2013-09-13 06:31:38.115; org.apache.solr.cloud.ShardLeaderElectionContext; Enough replicas found to continue.
+INFO  - 2013-09-13 06:31:38.116; org.apache.solr.cloud.ShardLeaderElectionContext; I may be the new leader - try and sync
+INFO  - 2013-09-13 06:31:38.116; org.apache.solr.cloud.SyncStrategy; Sync replicas to http://192.168.1.4:7574/solr/store1/
+INFO  - 2013-09-13 06:31:38.116; org.apache.solr.cloud.SyncStrategy; Sync Success - now sync replicas to me
+INFO  - 2013-09-13 06:31:38.116; org.apache.solr.cloud.SyncStrategy; http://192.168.1.4:7574/solr/store1/ has no replicas
+INFO  - 2013-09-13 06:31:38.116; org.apache.solr.cloud.ShardLeaderElectionContext; I am the new leader: http://192.168.1.4:7574/solr/store1/ shard2
+INFO  - 2013-09-13 06:31:38.117; org.apache.solr.common.cloud.SolrZkClient; makePath: /collections/store1/leaders/shard2
+INFO  - 2013-09-13 06:31:38.131; org.apache.solr.cloud.ZkController; We are http://192.168.1.4:7574/solr/store1/ and leader is http://192.168.1.4:7574/solr/store1/
+INFO  - 2013-09-13 06:31:38.131; org.apache.solr.cloud.ZkController; No LogReplay needed for core=store1 baseURL=http://192.168.1.4:7574/solr
+INFO  - 2013-09-13 06:31:38.131; org.apache.solr.cloud.ZkController; I am the leader, no recovery necessary
+INFO  - 2013-09-13 06:31:38.131; org.apache.solr.cloud.ZkController; publishing core=store1 state=active
+INFO  - 2013-09-13 06:31:38.132; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:31:38.136; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper... 
+INFO  - 2013-09-13 06:31:38.137; org.apache.solr.cloud.ZkController; Register replica - core:store2 address:http://192.168.1.4:7574/solr collection:store2 shard:shard2
+INFO  - 2013-09-13 06:31:38.138; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=10000&maxConnectionsPerHost=20&connTimeout=30000&socketTimeout=30000&retry=false
+INFO  - 2013-09-13 06:31:38.150; org.apache.solr.cloud.ShardLeaderElectionContext; Running the leader process for shard shard2
+INFO  - 2013-09-13 06:31:38.158; org.apache.solr.cloud.ShardLeaderElectionContext; Enough replicas found to continue.
+INFO  - 2013-09-13 06:31:38.158; org.apache.solr.cloud.ShardLeaderElectionContext; I may be the new leader - try and sync
+INFO  - 2013-09-13 06:31:38.158; org.apache.solr.cloud.SyncStrategy; Sync replicas to http://192.168.1.4:7574/solr/store2/
+INFO  - 2013-09-13 06:31:38.158; org.apache.solr.cloud.SyncStrategy; Sync Success - now sync replicas to me
+INFO  - 2013-09-13 06:31:38.159; org.apache.solr.cloud.SyncStrategy; http://192.168.1.4:7574/solr/store2/ has no replicas
+INFO  - 2013-09-13 06:31:38.159; org.apache.solr.cloud.ShardLeaderElectionContext; I am the new leader: http://192.168.1.4:7574/solr/store2/ shard2
+INFO  - 2013-09-13 06:31:38.159; org.apache.solr.common.cloud.SolrZkClient; makePath: /collections/store2/leaders/shard2
+INFO  - 2013-09-13 06:31:38.172; org.apache.solr.cloud.ZkController; We are http://192.168.1.4:7574/solr/store2/ and leader is http://192.168.1.4:7574/solr/store2/
+INFO  - 2013-09-13 06:31:38.172; org.apache.solr.cloud.ZkController; No LogReplay needed for core=store2 baseURL=http://192.168.1.4:7574/solr
+INFO  - 2013-09-13 06:31:38.173; org.apache.solr.cloud.ZkController; I am the leader, no recovery necessary
+INFO  - 2013-09-13 06:31:38.173; org.apache.solr.cloud.ZkController; publishing core=store2 state=active
+INFO  - 2013-09-13 06:31:38.173; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:31:38.179; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper... 
+INFO  - 2013-09-13 06:31:38.180; org.apache.solr.cloud.ZkController; Register replica - core:store address:http://192.168.1.4:7574/solr collection:store shard:shard1
+INFO  - 2013-09-13 06:31:38.181; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=10000&maxConnectionsPerHost=20&connTimeout=30000&socketTimeout=30000&retry=false
+INFO  - 2013-09-13 06:31:38.189; org.apache.solr.cloud.ZkController; We are http://192.168.1.4:7574/solr/store/ and leader is http://192.168.1.4:8983/solr/store/
+INFO  - 2013-09-13 06:31:38.189; org.apache.solr.cloud.ZkController; No LogReplay needed for core=store baseURL=http://192.168.1.4:7574/solr
+INFO  - 2013-09-13 06:31:38.189; org.apache.solr.cloud.ZkController; Core needs to recover:store
+INFO  - 2013-09-13 06:31:38.189; org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2013-09-13 06:31:38.190; org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=store recoveringAfterStartup=false
+INFO  - 2013-09-13 06:31:38.190; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper... 
+INFO  - 2013-09-13 06:31:38.191; org.apache.solr.cloud.ZkController; publishing core=store state=recovering
+INFO  - 2013-09-13 06:31:38.191; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:31:38.192; org.apache.solr.cloud.ZkController; Register replica - core:collection1 address:http://192.168.1.4:7574/solr collection:collection1 shard:shard1
+INFO  - 2013-09-13 06:31:38.192; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=10000&maxConnectionsPerHost=20&connTimeout=30000&socketTimeout=30000&retry=false
+INFO  - 2013-09-13 06:31:38.194; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+ERROR - 2013-09-13 06:31:38.198; org.apache.solr.common.SolrException; Error while trying to recover. core=store:org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://192.168.1.4:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:428)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:180)
+	at org.apache.solr.cloud.RecoveryStrategy.sendPrepRecoveryCmd(RecoveryStrategy.java:198)
+	at org.apache.solr.cloud.RecoveryStrategy.doRecovery(RecoveryStrategy.java:342)
+	at org.apache.solr.cloud.RecoveryStrategy.run(RecoveryStrategy.java:219)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://192.168.1.4:8983 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:365)
+	... 4 more
+Caused by: java.net.ConnectException: Network is unreachable
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 11 more
+
+ERROR - 2013-09-13 06:31:38.199; org.apache.solr.cloud.RecoveryStrategy; Recovery failed - trying again... (0) core=store
+INFO  - 2013-09-13 06:31:38.199; org.apache.solr.cloud.RecoveryStrategy; Wait 2.0 seconds before trying to recover again (1)
+INFO  - 2013-09-13 06:31:38.200; org.apache.solr.cloud.ZkController; We are http://192.168.1.4:7574/solr/collection1/ and leader is http://192.168.1.4:8983/solr/collection1/
+INFO  - 2013-09-13 06:31:38.200; org.apache.solr.cloud.ZkController; No LogReplay needed for core=collection1 baseURL=http://192.168.1.4:7574/solr
+INFO  - 2013-09-13 06:31:38.200; org.apache.solr.cloud.ZkController; Core needs to recover:collection1
+INFO  - 2013-09-13 06:31:38.201; org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2013-09-13 06:31:38.201; org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=collection1 recoveringAfterStartup=false
+INFO  - 2013-09-13 06:31:38.201; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper... 
+INFO  - 2013-09-13 06:31:38.201; org.apache.solr.cloud.ZkController; publishing core=collection1 state=recovering
+INFO  - 2013-09-13 06:31:38.202; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:31:38.203; org.apache.solr.common.cloud.DefaultConnectionStrategy; Reconnected to ZooKeeper
+INFO  - 2013-09-13 06:31:38.203; org.apache.solr.common.cloud.ConnectionManager; Connected:true
+INFO  - 2013-09-13 06:31:38.204; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+ERROR - 2013-09-13 06:31:38.208; org.apache.solr.common.SolrException; Error while trying to recover. core=collection1:org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://192.168.1.4:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:428)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:180)
+	at org.apache.solr.cloud.RecoveryStrategy.sendPrepRecoveryCmd(RecoveryStrategy.java:198)
+	at org.apache.solr.cloud.RecoveryStrategy.doRecovery(RecoveryStrategy.java:342)
+	at org.apache.solr.cloud.RecoveryStrategy.run(RecoveryStrategy.java:219)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://192.168.1.4:8983 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:365)
+	... 4 more
+Caused by: java.net.ConnectException: Network is unreachable
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 11 more
+
+ERROR - 2013-09-13 06:31:38.209; org.apache.solr.cloud.RecoveryStrategy; Recovery failed - trying again... (0) core=collection1
+INFO  - 2013-09-13 06:31:38.209; org.apache.solr.cloud.RecoveryStrategy; Wait 2.0 seconds before trying to recover again (1)
+INFO  - 2013-09-13 06:31:38.460; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2013-09-13 06:31:40.199; org.apache.solr.cloud.ZkController; publishing core=store state=recovering
+INFO  - 2013-09-13 06:31:40.200; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:31:40.206; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+INFO  - 2013-09-13 06:31:40.209; org.apache.solr.cloud.ZkController; publishing core=collection1 state=recovering
+INFO  - 2013-09-13 06:31:40.210; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+ERROR - 2013-09-13 06:31:40.212; org.apache.solr.common.SolrException; Error while trying to recover. core=store:org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://192.168.1.4:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:428)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:180)
+	at org.apache.solr.cloud.RecoveryStrategy.sendPrepRecoveryCmd(RecoveryStrategy.java:198)
+	at org.apache.solr.cloud.RecoveryStrategy.doRecovery(RecoveryStrategy.java:342)
+	at org.apache.solr.cloud.RecoveryStrategy.run(RecoveryStrategy.java:219)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://192.168.1.4:8983 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:365)
+	... 4 more
+Caused by: java.net.ConnectException: Network is unreachable
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 11 more
+
+ERROR - 2013-09-13 06:31:40.212; org.apache.solr.cloud.RecoveryStrategy; Recovery failed - trying again... (1) core=store
+INFO  - 2013-09-13 06:31:40.213; org.apache.solr.cloud.RecoveryStrategy; Wait 4.0 seconds before trying to recover again (2)
+INFO  - 2013-09-13 06:31:40.215; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+ERROR - 2013-09-13 06:31:40.222; org.apache.solr.common.SolrException; Error while trying to recover. core=collection1:org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://192.168.1.4:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:428)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:180)
+	at org.apache.solr.cloud.RecoveryStrategy.sendPrepRecoveryCmd(RecoveryStrategy.java:198)
+	at org.apache.solr.cloud.RecoveryStrategy.doRecovery(RecoveryStrategy.java:342)
+	at org.apache.solr.cloud.RecoveryStrategy.run(RecoveryStrategy.java:219)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://192.168.1.4:8983 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:365)
+	... 4 more
+Caused by: java.net.ConnectException: Network is unreachable
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 11 more
+
+ERROR - 2013-09-13 06:31:40.222; org.apache.solr.cloud.RecoveryStrategy; Recovery failed - trying again... (1) core=collection1
+INFO  - 2013-09-13 06:31:40.222; org.apache.solr.cloud.RecoveryStrategy; Wait 4.0 seconds before trying to recover again (2)
+INFO  - 2013-09-13 06:31:41.667; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2013-09-13 06:31:44.214; org.apache.solr.cloud.ZkController; publishing core=store state=recovering
+INFO  - 2013-09-13 06:31:44.214; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:31:44.219; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+INFO  - 2013-09-13 06:31:44.223; org.apache.solr.cloud.ZkController; publishing core=collection1 state=recovering
+INFO  - 2013-09-13 06:31:44.224; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+ERROR - 2013-09-13 06:31:44.227; org.apache.solr.common.SolrException; Error while trying to recover. core=store:org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://192.168.1.4:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:428)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:180)
+	at org.apache.solr.cloud.RecoveryStrategy.sendPrepRecoveryCmd(RecoveryStrategy.java:198)
+	at org.apache.solr.cloud.RecoveryStrategy.doRecovery(RecoveryStrategy.java:342)
+	at org.apache.solr.cloud.RecoveryStrategy.run(RecoveryStrategy.java:219)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://192.168.1.4:8983 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:365)
+	... 4 more
+Caused by: java.net.ConnectException: Network is unreachable
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 11 more
+
+ERROR - 2013-09-13 06:31:44.227; org.apache.solr.cloud.RecoveryStrategy; Recovery failed - trying again... (2) core=store
+INFO  - 2013-09-13 06:31:44.228; org.apache.solr.cloud.RecoveryStrategy; Wait 8.0 seconds before trying to recover again (3)
+INFO  - 2013-09-13 06:31:44.229; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+ERROR - 2013-09-13 06:31:44.236; org.apache.solr.common.SolrException; Error while trying to recover. core=collection1:org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://192.168.1.4:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:428)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:180)
+	at org.apache.solr.cloud.RecoveryStrategy.sendPrepRecoveryCmd(RecoveryStrategy.java:198)
+	at org.apache.solr.cloud.RecoveryStrategy.doRecovery(RecoveryStrategy.java:342)
+	at org.apache.solr.cloud.RecoveryStrategy.run(RecoveryStrategy.java:219)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://192.168.1.4:8983 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:365)
+	... 4 more
+Caused by: java.net.ConnectException: Network is unreachable
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 11 more
+
+ERROR - 2013-09-13 06:31:44.236; org.apache.solr.cloud.RecoveryStrategy; Recovery failed - trying again... (2) core=collection1
+INFO  - 2013-09-13 06:31:44.237; org.apache.solr.cloud.RecoveryStrategy; Wait 8.0 seconds before trying to recover again (3)
+INFO  - 2013-09-13 06:31:44.714; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2013-09-13 06:31:52.229; org.apache.solr.cloud.ZkController; publishing core=store state=recovering
+INFO  - 2013-09-13 06:31:52.230; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:31:52.238; org.apache.solr.cloud.ZkController; publishing core=collection1 state=recovering
+INFO  - 2013-09-13 06:31:52.238; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:31:52.240; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+INFO  - 2013-09-13 06:31:52.244; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+INFO  - 2013-09-13 06:31:52.273; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2013-09-13 06:31:54.250; org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://192.168.1.4:8983/solr/store/ core=store - recoveringAfterStartup=false
+INFO  - 2013-09-13 06:31:54.251; org.apache.solr.update.PeerSync; PeerSync: core=store url=http://192.168.1.4:7574/solr START replicas=[http://192.168.1.4:8983/solr/store/] nUpdates=100
+INFO  - 2013-09-13 06:31:54.252; org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://192.168.1.4:8983/solr/collection1/ core=collection1 - recoveringAfterStartup=false
+INFO  - 2013-09-13 06:31:54.252; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://192.168.1.4:7574/solr START replicas=[http://192.168.1.4:8983/solr/collection1/] nUpdates=100
+INFO  - 2013-09-13 06:31:54.257; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://192.168.1.4:7574/solr  Received 5 versions from 192.168.1.4:8983/solr/collection1/
+INFO  - 2013-09-13 06:31:54.257; org.apache.solr.update.PeerSync; PeerSync: core=store url=http://192.168.1.4:7574/solr  Received 10 versions from 192.168.1.4:8983/solr/store/
+INFO  - 2013-09-13 06:31:54.258; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://192.168.1.4:7574/solr  Our versions are newer. ourLowThreshold=1445530619152957440 otherHigh=1445530647210754048
+INFO  - 2013-09-13 06:31:54.258; org.apache.solr.update.PeerSync; PeerSync: core=store url=http://192.168.1.4:7574/solr  Our versions are newer. ourLowThreshold=1445531585375895552 otherHigh=1445531600102096896
+INFO  - 2013-09-13 06:31:54.258; org.apache.solr.update.PeerSync; PeerSync: core=collection1 url=http://192.168.1.4:7574/solr DONE. sync succeeded
+INFO  - 2013-09-13 06:31:54.258; org.apache.solr.update.PeerSync; PeerSync: core=store url=http://192.168.1.4:7574/solr DONE. sync succeeded
+INFO  - 2013-09-13 06:31:54.258; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2013-09-13 06:31:54.259; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2013-09-13 06:31:54.260; org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2013-09-13 06:31:54.260; org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2013-09-13 06:31:54.261; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@fb5449d main
+INFO  - 2013-09-13 06:31:54.262; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@12da22e9 main
+INFO  - 2013-09-13 06:31:54.263; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2013-09-13 06:31:54.263; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@fb5449d main{StandardDirectoryReader(segments_4:7:nrt _0(4.4):C1 _1(4.4):C1 _2(4.4):C3)}
+INFO  - 2013-09-13 06:31:54.264; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2013-09-13 06:31:54.264; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2013-09-13 06:31:54.264; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@fb5449d main{StandardDirectoryReader(segments_4:7:nrt _0(4.4):C1 _1(4.4):C1 _2(4.4):C3)}
+INFO  - 2013-09-13 06:31:54.264; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@12da22e9 main{StandardDirectoryReader(segments_13:165:nrt)}
+INFO  - 2013-09-13 06:31:54.265; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2013-09-13 06:31:54.264; org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was successful - registering as Active. core=collection1
+INFO  - 2013-09-13 06:31:54.265; org.apache.solr.core.SolrCore; [store] Registered new searcher Searcher@12da22e9 main{StandardDirectoryReader(segments_13:165:nrt)}
+INFO  - 2013-09-13 06:31:54.265; org.apache.solr.cloud.ZkController; publishing core=collection1 state=active
+INFO  - 2013-09-13 06:31:54.266; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:31:54.266; org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was successful - registering as Active. core=store
+INFO  - 2013-09-13 06:31:54.266; org.apache.solr.cloud.ZkController; publishing core=store state=active
+INFO  - 2013-09-13 06:31:54.266; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:31:55.318; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2013-09-13 06:53:39.524; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 2)
+INFO  - 2013-09-13 06:53:41.083; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes, has occurred - updating... (live nodes size: 2)
+INFO  - 2013-09-13 06:53:41.088; org.apache.solr.common.cloud.ZkStateReader$3; Updating live nodes... (1)
+INFO  - 2013-09-13 06:53:41.092; org.apache.solr.cloud.ShardLeaderElectionContext; Running the leader process for shard shard1
+INFO  - 2013-09-13 06:53:41.100; org.apache.solr.cloud.ShardLeaderElectionContext; Checking if I should try and be the leader.
+INFO  - 2013-09-13 06:53:41.100; org.apache.solr.cloud.ShardLeaderElectionContext; My last published State was Active, it's okay to be the leader.
+INFO  - 2013-09-13 06:53:41.100; org.apache.solr.cloud.ShardLeaderElectionContext; I may be the new leader - try and sync
+WARN  - 2013-09-13 06:53:41.100; org.apache.solr.cloud.RecoveryStrategy; Stopping recovery for zkNodeName=core_node1core=collection1
+INFO  - 2013-09-13 06:53:41.100; org.apache.solr.cloud.SyncStrategy; Sync replicas to http://192.168.1.4:7574/solr/collection1/
+INFO  - 2013-09-13 06:53:41.101; org.apache.solr.cloud.SyncStrategy; Sync Success - now sync replicas to me
+INFO  - 2013-09-13 06:53:41.101; org.apache.solr.cloud.SyncStrategy; http://192.168.1.4:7574/solr/collection1/ has no replicas
+INFO  - 2013-09-13 06:53:41.101; org.apache.solr.cloud.ShardLeaderElectionContext; I am the new leader: http://192.168.1.4:7574/solr/collection1/ shard1
+INFO  - 2013-09-13 06:53:41.101; org.apache.solr.common.cloud.SolrZkClient; makePath: /collections/collection1/leaders/shard1
+INFO  - 2013-09-13 06:53:41.117; org.apache.solr.cloud.ShardLeaderElectionContext; Running the leader process for shard shard1
+INFO  - 2013-09-13 06:53:41.125; org.apache.solr.cloud.ShardLeaderElectionContext; Checking if I should try and be the leader.
+INFO  - 2013-09-13 06:53:41.125; org.apache.solr.cloud.ShardLeaderElectionContext; My last published State was Active, it's okay to be the leader.
+INFO  - 2013-09-13 06:53:41.125; org.apache.solr.cloud.ShardLeaderElectionContext; I may be the new leader - try and sync
+WARN  - 2013-09-13 06:53:41.125; org.apache.solr.cloud.RecoveryStrategy; Stopping recovery for zkNodeName=core_node1core=store
+INFO  - 2013-09-13 06:53:41.126; org.apache.solr.cloud.SyncStrategy; Sync replicas to http://192.168.1.4:7574/solr/store/
+INFO  - 2013-09-13 06:53:41.126; org.apache.solr.cloud.SyncStrategy; Sync Success - now sync replicas to me
+INFO  - 2013-09-13 06:53:41.126; org.apache.solr.cloud.SyncStrategy; http://192.168.1.4:7574/solr/store/ has no replicas
+INFO  - 2013-09-13 06:53:41.126; org.apache.solr.cloud.ShardLeaderElectionContext; I am the new leader: http://192.168.1.4:7574/solr/store/ shard1
+INFO  - 2013-09-13 06:53:41.126; org.apache.solr.common.cloud.SolrZkClient; makePath: /collections/store/leaders/shard1
+INFO  - 2013-09-13 06:53:41.143; org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer_elect/leader
+INFO  - 2013-09-13 06:53:41.147; org.apache.solr.cloud.Overseer; Overseer (id=90375618087419921-192.168.1.4:7574_solr-n_0000000013) starting
+INFO  - 2013-09-13 06:53:41.168; org.apache.solr.cloud.OverseerCollectionProcessor; Process current queue of collection creations
+INFO  - 2013-09-13 06:53:41.170; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper... 
+INFO  - 2013-09-13 06:53:41.172; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Replaying operations from work queue.
+INFO  - 2013-09-13 06:53:41.172; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "shard_state":"active",
+  "core":"store2",
+  "collection":"store2",
+  "shard_range":null,
+  "node_name":"192.168.1.4:8983_solr",
+  "base_url":"http://192.168.1.4:8983/solr"}
+INFO  - 2013-09-13 06:53:41.182; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+INFO  - 2013-09-13 06:53:41.188; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "shard_state":"active",
+  "core":"store3",
+  "collection":"store3",
+  "shard_range":null,
+  "node_name":"192.168.1.4:8983_solr",
+  "base_url":"http://192.168.1.4:8983/solr"}
+INFO  - 2013-09-13 06:53:41.201; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "shard_state":"active",
+  "core":"store1",
+  "collection":"store1",
+  "shard_range":null,
+  "node_name":"192.168.1.4:8983_solr",
+  "base_url":"http://192.168.1.4:8983/solr"}
+INFO  - 2013-09-13 06:53:41.213; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Starting to work on the main queue
+INFO  - 2013-09-13 06:53:41.216; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper... 
+INFO  - 2013-09-13 06:53:41.218; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "shard_state":"active",
+  "core":"store1",
+  "collection":"store1",
+  "shard_range":null,
+  "node_name":"192.168.1.4:8983_solr",
+  "base_url":"http://192.168.1.4:8983/solr"}
+INFO  - 2013-09-13 06:53:41.226; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "shard_state":"active",
+  "core":"store",
+  "collection":"store",
+  "shard_range":null,
+  "node_name":"192.168.1.4:8983_solr",
+  "base_url":"http://192.168.1.4:8983/solr"}
+INFO  - 2013-09-13 06:53:41.235; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=2 message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "numShards":"2",
+  "shard":"shard1",
+  "roles":null,
+  "state":"down",
+  "shard_state":"active",
+  "core":"collection1",
+  "collection":"collection1",
+  "shard_range":null,
+  "node_name":"192.168.1.4:8983_solr",
+  "base_url":"http://192.168.1.4:8983/solr"}
+INFO  - 2013-09-13 06:53:41.283; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+INFO  - 2013-09-13 06:53:44.061; org.eclipse.jetty.server.Server; Graceful shutdown SocketConnector@0.0.0.0:7574
+INFO  - 2013-09-13 06:53:44.062; org.eclipse.jetty.server.Server; Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr-webapp/webapp/},/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/webapps/solr.war
+INFO  - 2013-09-13 06:53:45.063; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=1594691056
+INFO  - 2013-09-13 06:53:45.825; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper... 
+INFO  - 2013-09-13 06:53:45.828; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=null message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "shard":null,
+  "roles":null,
+  "state":"down",
+  "core":"store3",
+  "collection":"store3",
+  "node_name":"192.168.1.4:7574_solr",
+  "base_url":"http://192.168.1.4:7574/solr"}
+INFO  - 2013-09-13 06:53:45.829; org.apache.solr.cloud.Overseer$ClusterStateUpdater; shard=shard2 is already registered
+INFO  - 2013-09-13 06:53:45.842; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=null message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "shard":null,
+  "roles":null,
+  "state":"down",
+  "core":"store2",
+  "collection":"store2",
+  "node_name":"192.168.1.4:7574_solr",
+  "base_url":"http://192.168.1.4:7574/solr"}
+INFO  - 2013-09-13 06:53:45.842; org.apache.solr.cloud.Overseer$ClusterStateUpdater; shard=shard2 is already registered
+INFO  - 2013-09-13 06:53:45.854; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=null message={
+  "operation":"state",
+  "core_node_name":"core_node2",
+  "shard":null,
+  "roles":null,
+  "state":"down",
+  "core":"store1",
+  "collection":"store1",
+  "node_name":"192.168.1.4:7574_solr",
+  "base_url":"http://192.168.1.4:7574/solr"}
+INFO  - 2013-09-13 06:53:45.854; org.apache.solr.cloud.Overseer$ClusterStateUpdater; shard=shard2 is already registered
+INFO  - 2013-09-13 06:53:45.866; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=null message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "shard":null,
+  "roles":null,
+  "state":"down",
+  "core":"store",
+  "collection":"store",
+  "node_name":"192.168.1.4:7574_solr",
+  "base_url":"http://192.168.1.4:7574/solr"}
+INFO  - 2013-09-13 06:53:45.866; org.apache.solr.cloud.Overseer$ClusterStateUpdater; shard=shard1 is already registered
+INFO  - 2013-09-13 06:53:45.878; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=null message={
+  "operation":"state",
+  "core_node_name":"core_node1",
+  "shard":null,
+  "roles":null,
+  "state":"down",
+  "core":"collection1",
+  "collection":"collection1",
+  "node_name":"192.168.1.4:7574_solr",
+  "base_url":"http://192.168.1.4:7574/solr"}
+INFO  - 2013-09-13 06:53:45.878; org.apache.solr.cloud.Overseer$ClusterStateUpdater; shard=shard1 is already registered
+INFO  - 2013-09-13 06:53:45.897; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+INFO  - 2013-09-13 06:53:46.091; org.apache.solr.cloud.ZkController; publishing core=store3 state=down
+INFO  - 2013-09-13 06:53:46.092; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:53:46.096; org.apache.solr.cloud.ZkController; publishing core=store1 state=down
+INFO  - 2013-09-13 06:53:46.097; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:53:46.101; org.apache.solr.cloud.ZkController; publishing core=store2 state=down
+INFO  - 2013-09-13 06:53:46.102; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:53:46.106; org.apache.solr.cloud.ZkController; publishing core=store state=down
+INFO  - 2013-09-13 06:53:46.107; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:53:46.111; org.apache.solr.cloud.ZkController; publishing core=collection1 state=down
+INFO  - 2013-09-13 06:53:46.112; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2013-09-13 06:53:46.118; org.apache.solr.core.SolrCore; [store3]  CLOSING SolrCore org.apache.solr.core.SolrCore@4e953dc
+INFO  - 2013-09-13 06:53:46.119; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0}
+INFO  - 2013-09-13 06:53:46.119; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2013-09-13 06:53:46.119; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2013-09-13 06:53:46.119; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2013-09-13 06:53:46.120; org.apache.solr.core.SolrCore; [store3] Closing main searcher on request.
+INFO  - 2013-09-13 06:53:46.121; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2013-09-13 06:53:46.122; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3/data/index [CachedDir<<refCount=0;path=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3/data/index;done=false>>]
+INFO  - 2013-09-13 06:53:46.122; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3/data/index
+INFO  - 2013-09-13 06:53:46.122; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3/data [CachedDir<<refCount=0;path=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3/data;done=false>>]
+INFO  - 2013-09-13 06:53:46.123; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store3/data
+INFO  - 2013-09-13 06:53:46.123; org.apache.solr.core.SolrCore; [store1]  CLOSING SolrCore org.apache.solr.core.SolrCore@10cc296d
+INFO  - 2013-09-13 06:53:46.123; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0}
+INFO  - 2013-09-13 06:53:46.124; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2013-09-13 06:53:46.124; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2013-09-13 06:53:46.124; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2013-09-13 06:53:46.125; org.apache.solr.core.SolrCore; [store1] Closing main searcher on request.
+INFO  - 2013-09-13 06:53:46.125; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2013-09-13 06:53:46.125; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1/data [CachedDir<<refCount=0;path=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1/data;done=false>>]
+INFO  - 2013-09-13 06:53:46.126; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1/data
+INFO  - 2013-09-13 06:53:46.126; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1/data/index [CachedDir<<refCount=0;path=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1/data/index;done=false>>]
+INFO  - 2013-09-13 06:53:46.126; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store1/data/index
+INFO  - 2013-09-13 06:53:46.127; org.apache.solr.core.SolrCore; [store2]  CLOSING SolrCore org.apache.solr.core.SolrCore@4bb3bbb8
+INFO  - 2013-09-13 06:53:46.127; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0}
+INFO  - 2013-09-13 06:53:46.127; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2013-09-13 06:53:46.128; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2013-09-13 06:53:46.128; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2013-09-13 06:53:46.128; org.apache.solr.core.SolrCore; [store2] Closing main searcher on request.
+INFO  - 2013-09-13 06:53:46.129; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2013-09-13 06:53:46.129; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2/data [CachedDir<<refCount=0;path=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2/data;done=false>>]
+INFO  - 2013-09-13 06:53:46.130; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2/data
+INFO  - 2013-09-13 06:53:46.130; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2/data/index [CachedDir<<refCount=0;path=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2/data/index;done=false>>]
+INFO  - 2013-09-13 06:53:46.130; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store2/data/index
+INFO  - 2013-09-13 06:53:46.130; org.apache.solr.core.SolrCore; [store]  CLOSING SolrCore org.apache.solr.core.SolrCore@162d649f
+INFO  - 2013-09-13 06:53:46.131; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=2,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=5,cumulative_deletesById=1,cumulative_deletesByQuery=4,cumulative_errors=0}
+INFO  - 2013-09-13 06:53:46.131; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2013-09-13 06:53:46.131; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2013-09-13 06:53:46.131; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2013-09-13 06:53:46.134; org.apache.solr.core.SolrCore; [store] Closing main searcher on request.
+INFO  - 2013-09-13 06:53:46.134; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2013-09-13 06:53:46.134; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/data [CachedDir<<refCount=0;path=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/data;done=false>>]
+INFO  - 2013-09-13 06:53:46.134; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/data
+INFO  - 2013-09-13 06:53:46.135; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/data/index [CachedDir<<refCount=0;path=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/data/index;done=false>>]
+INFO  - 2013-09-13 06:53:46.135; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/store/data/index
+INFO  - 2013-09-13 06:53:46.135; org.apache.solr.core.SolrCore; [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@1446745
+INFO  - 2013-09-13 06:53:46.136; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=2,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0}
+INFO  - 2013-09-13 06:53:46.136; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2013-09-13 06:53:46.136; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2013-09-13 06:53:46.136; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2013-09-13 06:53:46.138; org.apache.solr.core.SolrCore; [collection1] Closing main searcher on request.
+INFO  - 2013-09-13 06:53:46.140; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2013-09-13 06:53:46.141; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/data/index [CachedDir<<refCount=0;path=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/data/index;done=false>>]
+INFO  - 2013-09-13 06:53:46.141; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/data/index
+INFO  - 2013-09-13 06:53:46.141; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/data [CachedDir<<refCount=0;path=/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/data;done=false>>]
+INFO  - 2013-09-13 06:53:46.141; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr/collection1/data
+INFO  - 2013-09-13 06:53:46.143; org.apache.solr.cloud.Overseer$ClusterStateUpdater; According to ZK I (id=90375618087419921-192.168.1.4:7574_solr-n_0000000013) am no longer a leader.
+INFO  - 2013-09-13 06:53:46.147; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes, has occurred - updating... (live nodes size: 1)
+INFO  - 2013-09-13 06:53:46.148; org.eclipse.jetty.server.handler.ContextHandler; stopped o.e.j.w.WebAppContext{/solr,file:/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/solr-webapp/webapp/},/home/jholmberg/Projects/titan-solr-cloud-test/solr-4.4.0/example2/webapps/solr.war
